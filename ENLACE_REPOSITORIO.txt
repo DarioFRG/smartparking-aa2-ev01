@@ -2,4 +2,4 @@ EVIDENCIA: GA7-220501096-AA2-EV01
 PROYECTO: SmartParking
 
 Enlace del repositorio:
-(PEGAR_AQUI_EL_LINK_DE_GITHUB)
+https://github.com/DarioFRG/smartparking-aa2-ev01.git
