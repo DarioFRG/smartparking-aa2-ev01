@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Movimientos - SmartParking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="listarAbiertos()">
+  <h1>Ingreso / Salida (Web)</h1>
+
+  <nav>
+    <a href="index.html">Inicio</a> |
+    <a href="vehiculos.html">Vehículos</a>
+  </nav>
+
+  <div class="card">
+    <h3>Registrar ingreso</h3>
+
+    <label>ID Vehículo
+      <input id="idVehiculo" type="number" value="1">
+    </label>
+
+    <label>ID Espacio
+      <input id="idEspacio" type="number" value="1">
+    </label>
+
+    <label>ID Usuario Registra
+      <input id="idUsuarioRegistra" type="number" value="1">
+    </label>
+
+    <button onclick="ingreso()">Ingreso</button>
+  </div>
+
+  <div class="card">
+    <h3>Registrar salida</h3>
+
+    <label>ID Movimiento
+      <input id="idMovimientoSalida" type="number" placeholder="Ej: 1">
+    </label>
+
+    <label>Tarifa por hora
+      <input id="tarifaHora" type="number" value="2500">
+    </label>
+
+    <button onclick="salida()">Salida</button>
+  </div>
+
+  <p id="movMsg"></p>
+
+  <div class="card">
+    <h3>Movimientos abiertos (JSON)</h3>
+    <button onclick="listarAbiertos()">Refrescar</button>
+    <pre id="movJson">[]</pre>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

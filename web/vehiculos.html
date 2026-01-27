@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Vehículos - SmartParking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="cargarVehiculos()">
+  <h1>Vehículos (Web)</h1>
+
+  <nav>
+    <a href="index.html">Inicio</a> |
+    <a href="movimientos.html">Movimientos</a>
+  </nav>
+
+  <div class="card">
+    <h3>Registrar vehículo</h3>
+
+    <label>Placa
+      <input id="placa" placeholder="AAA111">
+    </label>
+
+    <label>Tipo
+      <input id="tipo" placeholder="CARRO">
+    </label>
+
+    <label>Marca
+      <input id="marca" placeholder="Mazda">
+    </label>
+
+    <label>Color
+      <input id="color" placeholder="Rojo">
+    </label>
+
+    <label>ID Usuario
+      <input id="idUsuario" type="number" value="1">
+    </label>
+
+    <button onclick="crearVehiculo()">Guardar</button>
+
+    <p id="vehiculosMsg"></p>
+  </div>
+
+  <div class="card">
+    <h3>Listado de vehículos (JSON)</h3>
+    <button onclick="cargarVehiculos()">Refrescar</button>
+    <pre id="vehiculosJson">[]</pre>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

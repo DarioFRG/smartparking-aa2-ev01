@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+nav a { margin-right: 12px; }
+.card { border: 1px solid #ddd; padding: 12px; border-radius: 8px; margin: 12px 0; }
+label { display: block; margin-top: 8px; }
+input, button { padding: 8px; margin-top: 4px; width: 280px; }
+button { width: auto; cursor: pointer; }
+pre { background: #f6f6f6; padding: 10px; border-radius: 8px; overflow: auto; }
+.success { color: green; }
+.error { color: darkred; }
