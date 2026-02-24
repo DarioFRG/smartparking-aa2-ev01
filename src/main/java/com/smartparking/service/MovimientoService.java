@@ -27,7 +27,7 @@ public class MovimientoService {
     }
 
     // ✅ Registrar salida y calcular pago
-    public Movimiento registrarSalida(Integer idMovimiento, int tarifaHora) {
+    public Movimiento registrarSalida(int idMovimiento, int tarifaHora) {
 
         Movimiento mov = repo.findById(idMovimiento).orElse(null);
         if (mov == null) return null;

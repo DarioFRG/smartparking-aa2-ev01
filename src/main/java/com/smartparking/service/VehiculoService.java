@@ -27,12 +27,12 @@ public class VehiculoService {
     }
 
     // READ (BY ID)
-    public Vehiculo buscarPorId(Integer id) {
+    public Vehiculo buscarPorId(int id) {
         return repo.findById(id).orElse(null);
     }
 
     // UPDATE ✅
-    public Vehiculo actualizar(Integer id, Vehiculo nuevo) {
+    public Vehiculo actualizar(int id, Vehiculo nuevo) {
         return repo.findById(id).map(actual -> {
             actual.setPlaca(nuevo.getPlaca());
             actual.setTipo(nuevo.getTipo());
@@ -45,7 +45,7 @@ public class VehiculoService {
     }
 
     // DELETE ✅
-    public boolean eliminar(Integer id) {
+    public boolean eliminar(int id) {
         if (repo.existsById(id)) {
             repo.deleteById(id);
             return true;
